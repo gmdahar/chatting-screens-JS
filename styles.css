@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e5ddd5;
+}
+
+#h1-head
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+#h1-head h1
+{
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.main-container
+{
+display: flex;
+justify-content: center;
+align-items: start;
+margin-top: 20px;
+width: 100%;
+height: 100vh;
+}
+
+.chat-container {
+    display: flex;
+    height: 70vh;
+    width: 50%;
+    gap: 50px;
+    overflow: hidden;
+}
+
+.chat-screen {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #ddd;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    background-color: #128C7E;
+    color: white;
+    border-radius: 3px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header-info {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.person-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.status {
+    font-size: 14px;
+    color: #b9b9b9;
+}
+
+.header-icons .icon {
+    width: 24px;
+    height: 24px;
+    fill: white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.chat-input {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+.send-icon {
+    width: 24px;
+    height: 24px;
+    fill: #128C7E;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.message.sent {
+    justify-content: flex-end;
+}
+
+.message.received {
+    justify-content: flex-start;
+}
+
+.message-content {
+    max-width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+}
+
+.message.sent .message-content {
+    background-color: #dcf8c6;
+}
+
+.message-time {
+    font-size: 12px;
+    color: #b9b9b9;
+    margin-left: 5px;
+}
+
+.message-time.sent {
+    margin-right: 5px;
+}
+
+.message .double-ticks {
+    width: 16px;
+    height: 16px;
+    fill: #34b7f1;
+    margin-left: 5px;
+}
